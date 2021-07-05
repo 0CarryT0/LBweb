@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最受欢迎女主角</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <style>
+        body {
+            background: url(images/back_image.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+    <script type="text/javascript">
+        function click_it() {
+            document.getElementById("afterlog").innerHTML = "注册登录功能暂未开放";
+            return false;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="title_image">
+        <img src="images/title_image.jpg">
+    </div>
+    <div class="back_ground">
+        <div class="title_part">
+            <div class="title_logo">
+                <img src="images/title_logo.jpg">
+            </div>
+            <div class="title_logo">
+                <b> 萝卜制作</b>
+            </div>
+            <div class="title_button2">
+                <a href="about_us.html">关于我(们)</a>
+            </div>
+            <div class="title_button1">
+                <a href="login.html">登录</a>
+            </div>
+            <div class="title_button1">
+                <a href="login.html">注册</a>
+            </div>
+            <div class="title_button1">
+                <a href="index.html">主页</a>
+            </div>
+        </div>
+        <form class="log" onsubmit=" return click_it();">
+            <br />
+            <b>昵称</b>
+            <font color="red">*</font>：<input type="text" id="name" /><br />
+            <br />
+            <b>密码</b>
+            <font color="red">*</font>：<input type="password" id="pass" /><br />
+            <br />
+            <input type="submit" value="注册" />
+            <input type="submit" value="登录" /><br/><br/>
+            <span id="afterlog">
+            </span>
+        </form>
+    </div>
+</body>
+
+</html>

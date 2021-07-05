@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最受欢迎女主角</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <style>
+        body {
+            background: url(images/back_image.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        #b1 {
+            margin-left: -70px;
+            position: absolute;
+        }
+    </style>
+    <script type="text/javascript">
+        function move_it() {
+            var a = b1.offsetLeft;
+            if (a < 900) {
+                document.getElementById("b1").value = "抓不到我嘿嘿嘿~";
+                document.getElementById("b1").style.right = "400px";
+                
+            }
+            else {
+                document.getElementById("b1").style.right = "100000px";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="title_image">
+        <img src="images/title_image.jpg">
+    </div>
+    <div class="back_ground">
+        <div class="title_part">
+            <div class="title_logo">
+                <img src="images/title_logo.jpg">
+            </div>
+            <div class="title_logo">
+                <b> 萝卜制作</b>
+            </div>
+            <div class="title_button2">
+                <a href="about_us.html">关于我(们)</a>
+            </div>
+            <div class="title_button1">
+                <a href="login.html">登录</a>
+            </div>
+            <div class="title_button1">
+                <a href="login.html">注册</a>
+            </div>
+            <div class="title_button1">
+                <a href="index.html">主页</a>
+            </div>
+        </div>
+        <div class="about_us">
+            <h1><b>关于我</b></h1>
+            <p>不知道说点什么。。。</p>
+            <p>二次元真有趣！！！</p>
+            <p>做网页真好玩<del>个锤子</del>！！！</p>
+            <p>肝了这么多天终于做出了这么一个高质量
+                <del>（功能不全画面丑陋）</del>的网页<br />
+            </p>
+            <p>总代码量不多，大约是800行<del>(算上复制粘贴水行的)</del></p>
+            <p>其中每张图片因为适配问题均用PS进行处理<del>(令人头tu)</del></p>
+            <img src="images/tu.jpg">
+            <p>才意识到真正好的程序员是要会美工的啊，可惜萝卜的审美实在拉跨。。。</p>
+            <p><b>还有的就是</b></p>
+            <p>由于<b>时间</b>，<b>资金</b>，<b>技术</b>等方面因素，仍有很多功能未完善(甚至主要的投票功能)orz orz</p>
+            <p>但制作不易，恳请留个点赞</p>
+            <input type="button" id="b1" onclick="move_it()" value="我是赞" />
+            <br />
+            <br />
+            <p><h1>声明：</h1></p>
+            <p>图片来源于网络</p>
+            <p>所有<b>“了解更多”</b>链接至<b>《萌娘百科》</b>，并非萝卜创作</p>
+            <p><del>因为服务器问题，有时候会比较慢才能进去</del></p>
+            <p><h1>谢谢捧场~~~</h1></p>
+            <img src="images/guaiqiao.jpg">
+            <br />
+            <a href="index.html"><font size = "10px">返回</font></a>
+        </div>
+    </div>
+</body>
+
+</html>
